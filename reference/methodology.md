@@ -53,7 +53,7 @@ Before launching searches, decompose the research question into 5-10 independent
 
 1. **Core topic (semantic search)** - Meaning-based exploration of main concept
 2. **Technical details (keyword search)** - Specific terms, APIs, implementations
-3. **Recent developments (date-filtered)** - What's new in 2024-2025
+3. **Recent developments (date-filtered)** - What's new in last 12-18 months (use current date from Step 0)
 4. **Academic sources (domain-specific)** - Papers, research, formal analysis
 5. **Alternative perspectives (comparison)** - Competing approaches, criticisms
 6. **Statistical/data sources** - Quantitative evidence, metrics, benchmarks
@@ -61,6 +61,11 @@ Before launching searches, decompose the research question into 5-10 independent
 8. **Critical analysis/limitations** - Known problems, failure modes, edge cases
 
 ### Parallel Execution Protocol
+
+**Step 0: Get the current date**
+
+Before ANY searches, retrieve today's date using Bash: `date +%Y-%m-%d`
+Use the returned year for all date-filtered queries and recency checks. Do NOT assume a year from training data.
 
 **Step 1: Launch ALL searches concurrently (single message)**
 
@@ -79,6 +84,17 @@ Choose ONE search approach per research session:
 - Tool name: `mcp__Exa__exa_search`
 - Parameters: `query` (required), `type` (auto/neural/keyword), `num_results`, `start_published_date`, `include_domains`
 - Example: `mcp__Exa__exa_search(query="quantum computing", type="neural", num_results=10)`
+
+**Option C: Use search-cli (if installed, multi-provider)**
+- Unified CLI aggregating Brave, Serper, Exa, Jina, and Firecrawl
+- Install: `brew tap 199-biotechnologies/tap && brew install search-cli`
+- Requires API keys: `search config set keys.[provider] YOUR_KEY`
+- Auto-detects best provider per query type (academic, news, general, people)
+- JSON output for structured processing: `search "query" --json`
+- Modes: general, news, academic, scholar, patents, people, images, extract, scrape
+- Example: `search "quantum computing 2025" -m academic --json -c 15`
+- **First-time setup:** Ask user if they want to install search-cli and configure API keys
+
 
 **NEVER mix parameter styles** - this causes "Invalid tool parameters" errors.
 
@@ -141,7 +157,7 @@ As results arrive:
 
 **Source diversity requirements:**
 - Minimum 3 source types (academic, industry, news, technical docs)
-- Temporal diversity (mix of recent 2024-2025 + foundational older sources)
+- Temporal diversity (mix of recent 12-18 months + foundational older sources)
 - Perspective diversity (proponents + critics + neutral analysis)
 - Geographic diversity (not just US sources)
 
@@ -152,6 +168,7 @@ As results arrive:
 
 **Techniques:**
 - Use WebSearch for current information (primary tool)
+- Use search-cli for multi-provider aggregated search (if installed)
 - Use WebFetch for deep dives into specific sources (secondary)
 - Use Exa search (via WebSearch with type="neural") for semantic exploration
 - Use Grep/Read for local documentation
