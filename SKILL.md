@@ -9,7 +9,7 @@ description: Conducts enterprise-grade research with multi-source synthesis, cit
 
 Deliver citation-backed, verified research reports through a structured pipeline with source credibility scoring, evidence persistence, and progressive context management.
 
-**Autonomy Principle:** Operate independently. Infer assumptions from context. Only stop for critical errors or incomprehensible queries.
+**Autonomy Principle:** Operate independently. For scope-defining assumptions (which product, time period, market), surface these in Phase 1 output before proceeding to Phase 2. For interpretive assumptions (audience level, perspective balance), state them in the Introduction's Key Assumptions section for post-delivery review. Only stop mid-research for critical errors or incomprehensible queries.
 
 ---
 

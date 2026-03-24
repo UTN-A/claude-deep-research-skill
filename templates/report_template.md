@@ -79,13 +79,7 @@ CITATION TRACKING (CRITICAL):
 
 ## Executive Summary
 
-[Write 3-5 bullet points, 200-400 words total]
-- **Key Finding 1:** [Major discovery with specific data/metrics]
-- **Key Finding 2:** [Important insight with evidence]
-- **Key Finding 3:** [Critical conclusion with implications]
-- [Additional findings as needed]
-
-**Primary Recommendation:** [One clear sentence stating the main recommendation]
+[Write 200-400 words as flowing prose. Open with the single most important finding and its supporting data. Follow with 2-3 paragraphs that present additional key findings, weaving in specific metrics and evidence. Close with the primary recommendation and overall confidence level. Use inline emphasis for key terms rather than bullet-point structure.]
 
 **Confidence Level:** [High/Medium/Low with brief justification]
 
@@ -180,41 +174,19 @@ CITATION TRACKING (CRITICAL):
 ## Synthesis & Insights
 
 <!-- This section should be 500-1000 words -->
-<!-- Go beyond just summarizing - generate NEW insights -->
+<!-- Identify cross-source connections and label them as synthesis, not fact -->
 
 ### Patterns Identified
 
-[2-3 paragraphs identifying key patterns across findings]
-
-**Pattern 1: [Name]**
-[Explain the pattern in detail, cite which findings support it]
-
-**Pattern 2: [Name]**
-[Continue...]
+[Write 2-3 paragraphs as flowing prose. For each pattern, name it inline (e.g., "The most prominent pattern — **adaptive resistance** — emerged from sources [3], [7], and [12]..."), explain it, and cite the specific findings that support it. State how many sources contribute to each pattern. Mark any pattern supported by fewer than 3 sources as tentative.]
 
 ### Novel Insights
 
-[2-3 paragraphs of insights that go BEYOND what sources explicitly stated]
-
-**Insight 1: [Name]**
-[What you discovered by connecting information across sources]
-[Why this matters even though no single source said it explicitly]
-
-**Insight 2: [Name]**
-[Continue...]
+[Write 2-3 paragraphs as flowing prose. These are connections YOU identified by reading across sources — things no single source states explicitly. For each insight, explain what you connected and why it matters. Label each clearly as synthesis, not fact: "Combining [Source A]'s finding on X with [Source B]'s data on Y suggests..." Do not present synthesis as if it were directly reported by sources.]
 
 ### Implications
 
-[2-3 paragraphs on what all this means]
-
-**For [User Context]:**
-[Specific implications for the user's situation/decision]
-
-**Broader Implications:**
-[Wider significance of these findings]
-
-**Second-Order Effects:**
-[What might happen as consequences of these findings]
+[Write 2-3 paragraphs as flowing prose covering: (1) specific implications for the user's situation/decision, (2) broader significance of these findings, and (3) second-order effects — what might happen as consequences. Ground each implication in specific findings rather than generic statements.]
 
 ---
 
